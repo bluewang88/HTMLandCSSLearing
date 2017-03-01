@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<select id="City">
+		<option value="bj">北京</option>
+		<option value="tj">天津</option>
+		<option value="sh">上海</option>
+	</select>
+	<select  id="area">
+		<option value="hd">海淀</option>
+		<option value="cy">朝阳</option>
+		<option value="dc">东城</option>
+	</select>
+	
+</body>
+<script type="text/javascript">
+	var select = document.getElementById("City");
+	select.onchange = function(){
+		var optionVal = select.value;
+	    switch(optionVal){
+	    	case 'bj':
+	    		document.getElementById("area");
+	    		area.innerHTML = "<option>海淀</option><option>朝阳</option><option>东城</option>"
+	    		break;
+	    	case 'tj':
+	    	document.getElementById("area");
+	    		area.innerHTML = "<option>南开</option><option>西青</option><option>河西</option>"
+	    		break;
+	    	case 'sh':
+	    	document.getElementById("area");
+	    		area.innerHTML = "<option>浦东</option><option>徐汇</option><option>杨浦</option>"
+	    		break;
+	    	default:
+	    }
+	}
+	// var option = select.value;
+	// alert(optionVal);
+</script>
+</html>
